@@ -6,9 +6,9 @@ Integrate a Kathrein Wallbox with Home Assistant over local Modbus TCP. Monitor 
 
 This is an independent community project and is not affiliated with, endorsed by, or sponsored by KATHREIN Digital Systems GmbH, the manufacturer of the Wallbox. Kathrein and related product names are trademarks of their respective owners.
 
-[![License](https://img.shields.io/github/license/zomtec/hacs-kathrein-wallbox?style=flat-square)](LICENSE)
-[![Latest release](https://img.shields.io/github/v/release/zomtec/hacs-kathrein-wallbox?style=flat-square)](https://github.com/zomtec/hacs-kathrein-wallbox/releases/latest)
-[![Commit activity](https://img.shields.io/github/commit-activity/y/zomtec/hacs-kathrein-wallbox?style=flat-square)](https://github.com/zomtec/hacs-kathrein-wallbox/commits)
+[![License](https://img.shields.io/github/license/zomtec/ha-kathrein-wallbox?style=flat-square)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/zomtec/ha-kathrein-wallbox?style=flat-square)](https://github.com/zomtec/ha-kathrein-wallbox/releases/latest)
+[![Commit activity](https://img.shields.io/github/commit-activity/y/zomtec/ha-kathrein-wallbox?style=flat-square)](https://github.com/zomtec/ha-kathrein-wallbox/commits)
 [![HACS custom repository](https://img.shields.io/badge/HACS-Custom-41BDF5?style=flat-square)](https://www.hacs.xyz/docs/faq/custom_repositories/)
 
 > [!IMPORTANT]
@@ -27,7 +27,7 @@ The integration targets the KATHREIN KWB-AC series:
 | KWB-AC60 | Should work if the Wallbox reports mapping version `0x0002`. |
 | KWB-AC60 E | Should work if the Wallbox reports mapping version `0x0002`. |
 
-The setup flow rejects Wallboxes that do not report mapping version `0x0002`. If you use a model other than the KWB-AC35, please report whether it works by [opening an issue](https://github.com/zomtec/hacs-kathrein-wallbox/issues).
+The setup flow rejects Wallboxes that do not report mapping version `0x0002`. If you use a model other than the KWB-AC35, please report whether it works by [opening an issue](https://github.com/zomtec/ha-kathrein-wallbox/issues).
 
 ## Installation
 
@@ -35,10 +35,10 @@ The setup flow rejects Wallboxes that do not report mapping version `0x0002`. If
 
 This repository is installed in HACS as a **custom repository**; it is not necessarily part of HACS's default catalog.
 
-[![Add this repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=zomtec&repository=hacs-kathrein-wallbox&category=integration)
+[![Add this repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=zomtec&repository=ha-kathrein-wallbox&category=integration)
 
 1. Open HACS and choose **Integrations**.
-2. Open the menu (⋮), select **Custom repositories**, and add `zomtec/hacs-kathrein-wallbox` with category **Integration**. Or use the HACS button above.
+2. Open the menu (⋮), select **Custom repositories**, and add `zomtec/ha-kathrein-wallbox` with category **Integration**. Or use the HACS button above.
 3. Install **Kathrein Wallbox** and restart Home Assistant.
 
 ### Manual installation
@@ -252,7 +252,7 @@ Removing the integration does not reset anything on the Wallbox. EMS control and
 
 ## Support
 
-Please [open an issue](https://github.com/zomtec/hacs-kathrein-wallbox/issues) for bug reports or feature requests. Include your Home Assistant version, Wallbox model and firmware if known, and relevant diagnostics with personal or network details reviewed.
+Please [open an issue](https://github.com/zomtec/ha-kathrein-wallbox/issues) for bug reports or feature requests. Include your Home Assistant version, Wallbox model and firmware if known, and relevant diagnostics with personal or network details reviewed.
 
 ## Acknowledgments
 

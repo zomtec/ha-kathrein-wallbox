@@ -5,10 +5,10 @@
   "config_flow": true,
   "dependencies": ["modbus"],
   "dhcp": [{"hostname": "kwb*", "macaddress": "00D055*"}],
-  "documentation": "https://github.com/zomtec/hacs-kathrein-wallbox/blob/main/README.md",
+  "documentation": "https://github.com/zomtec/ha-kathrein-wallbox/blob/main/README.md",
   "integration_type": "device",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/zomtec/hacs-kathrein-wallbox/issues",
+  "issue_tracker": "https://github.com/zomtec/ha-kathrein-wallbox/issues",
   "loggers": ["modbus_connection", "tmodbus"],
   "requirements": [],
   "version": "0.0.0"
