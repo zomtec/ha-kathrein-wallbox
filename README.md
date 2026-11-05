@@ -9,7 +9,7 @@ This is an independent community project and is not affiliated with, endorsed by
 [![License](https://img.shields.io/github/license/zomtec/ha-kathrein-wallbox?style=flat-square)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/zomtec/ha-kathrein-wallbox?style=flat-square)](https://github.com/zomtec/ha-kathrein-wallbox/releases/latest)
 [![Commit activity](https://img.shields.io/github/commit-activity/y/zomtec/ha-kathrein-wallbox?style=flat-square)](https://github.com/zomtec/ha-kathrein-wallbox/commits)
-[![HACS custom repository](https://img.shields.io/badge/HACS-Custom-41BDF5?style=flat-square)](https://www.hacs.xyz/docs/faq/custom_repositories/)
+[![Home Assistant Marketplace](https://img.shields.io/badge/Home%20Assistant-Marketplace-41BDF5?style=flat-square)](https://www.home-assistant.io/integrations/marketplace/)
 
 > [!IMPORTANT]
 > This integration communicates with the Wallbox locally over Modbus TCP. Enable the Modbus server in the Wallbox web interface under **Settings > Modbus TCP control** before adding the integration.
@@ -27,19 +27,21 @@ The integration targets the KATHREIN KWB-AC series:
 | KWB-AC60 | Should work if the Wallbox reports mapping version `0x0002`. |
 | KWB-AC60 E | Should work if the Wallbox reports mapping version `0x0002`. |
 
-The setup flow rejects Wallboxes that do not report mapping version `0x0002`. If you use a model other than the KWB-AC35, please report whether it works by [opening an issue](https://github.com/zomtec/ha-kathrein-wallbox/issues).
+The setup flow rejects Wallboxes that do not report mapping version `0x0002`. If you use a model other than the KWB-AC35, please report whether it works by [opening an issue](https://github.com/zomtec/ha-kathrein-wallbox/i### Marketplace
 
-## Installation
+Kathrein Wallbox is listed in the catalog of the Home Assistant [Marketplace](https://www.home-assistant.io/integrations/marketplace/) (formerly HACS).
 
-### HACS
+[![Open this repository in the Marketplace](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=zomtec&repository=ha-kathrein-wallbox&category=integration)
 
-This repository is installed in HACS as a **custom repository**; it is not necessarily part of HACS's default catalog.
+1. Open **Settings > Marketplace** and search for **Kathrein Wallbox**, or use the button above.
+2. Select **Install** and confirm.
+3. Restart Home Assistant if a repair asks for it, then [set up the integration](#set-up-the-integration).
 
-[![Add this repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=zomtec&repository=ha-kathrein-wallbox&category=integration)
+Updates appear under **Settings > Updates**.
 
-1. Open HACS and choose **Integrations**.
-2. Open the menu (⋮), select **Custom repositories**, and add `zomtec/ha-kathrein-wallbox` with category **Integration**. Or use the HACS button above.
-3. Install **Kathrein Wallbox** and restart Home Assistant.
+On Home Assistant 2026.10, which has no Marketplace yet, search for **Kathrein Wallbox** in HACS instead.
+
+ restart Home Assistant.
 
 ### Manual installation
 
@@ -245,7 +247,7 @@ Downloaded config-entry diagnostics include model and mapping information, meter
 ## Removing the integration
 
 1. Open **Settings > Devices & services**, select **Kathrein Wallbox**, open the menu (⋮) of the entry, and choose **Delete**.
-2. Optionally, remove **Kathrein Wallbox** in HACS (or delete `custom_components/kathrein_wallbox` for a manual installation).
+2. Optionally, uninstall **Kathrein Wallbox** in **Settings > Marketplace** (repository page, menu (⋮), **Uninstall**), or delete `custom_components/kathrein_wallbox` for a manual installation.
 3. Restart Home Assistant.
 
 Removing the integration does not reset anything on the Wallbox. EMS control and the last setpoint stay as they were last written, see [EMS controls](#ems-controls). To hand the Wallbox back to its own control, call `set_ems_control_enabled` with `enabled: false` before removing the integration.
