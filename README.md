@@ -27,7 +27,11 @@ The integration targets the KATHREIN KWB-AC series:
 | KWB-AC60 | Should work if the Wallbox reports mapping version `0x0002`. |
 | KWB-AC60 E | Should work if the Wallbox reports mapping version `0x0002`. |
 
-The setup flow rejects Wallboxes that do not report mapping version `0x0002`. If you use a model other than the KWB-AC35, please report whether it works by [opening an issue](https://github.com/zomtec/ha-kathrein-wallbox/i### Marketplace
+The setup flow rejects Wallboxes that do not report mapping version `0x0002`. If you use a model other than the KWB-AC35, please report whether it works by [opening an issue](https://github.com/zomtec/ha-kathrein-wallbox/issues).
+
+## Installation
+
+### Marketplace
 
 Kathrein Wallbox is listed in the catalog of the Home Assistant [Marketplace](https://www.home-assistant.io/integrations/marketplace/) (formerly HACS).
 
@@ -40,8 +44,6 @@ Kathrein Wallbox is listed in the catalog of the Home Assistant [Marketplace](ht
 Updates appear under **Settings > Updates**.
 
 On Home Assistant 2026.10, which has no Marketplace yet, search for **Kathrein Wallbox** in HACS instead.
-
- restart Home Assistant.
 
 ### Manual installation
 
