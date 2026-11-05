@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Définir la matrice des relais",
-      "description": "Choisir la configuration des relais utilisée par la commande EMS.",
+      "name": "Définir les phases de charge",
+      "description": "Choisir si la wallbox charge sur une phase (phase 1) ou sur trois phases sous la commande EMS.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Définir la matrice des relais après expiration",
-      "description": "Choisir la configuration des relais utilisée à l’expiration du délai EMS.",
+      "name": "Définir les phases après expiration",
+      "description": "Choisir les phases utilisées à l’expiration du délai EMS.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
           "description": "Wallbox à piloter."
         },
         "value": {
-          "name": "Matrice de repli",
+          "name": "Phases de repli",
           "description": "Phases à utiliser après l’expiration du délai."
         }
       }
@@ -327,7 +327,7 @@
         "name": "Délai d’expiration EMS"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "Matrice des relais de repli EMS",
+        "name": "Phases de repli EMS",
         "state": {
           "phase_1": "Phase 1",
           "phase_2": "Phase 2",

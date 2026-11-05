@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Ställ in reläkonfiguration",
-      "description": "Välj reläkonfiguration för EMS-styrningen.",
+      "name": "Ställ in laddfaser",
+      "description": "Välj om laddboxen ska ladda på en fas (fas 1) eller tre faser under EMS-styrningen.",
       "fields": {
         "device_id": {
           "name": "Laddbox",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Ställ in reläkonfiguration efter EMS-tidsgräns",
-      "description": "Välj reläkonfigurationen som används när EMS-tidsgränsen löper ut.",
+      "name": "Ställ in faser efter EMS-tidsgräns",
+      "description": "Välj faserna som används när EMS-tidsgränsen löper ut.",
       "fields": {
         "device_id": {
           "name": "Laddbox",
           "description": "Laddboxen som ska styras."
         },
         "value": {
-          "name": "Reservkonfiguration",
+          "name": "Reservfaser",
           "description": "Faser som används efter tidsgränsen."
         }
       }
@@ -327,7 +327,7 @@
         "name": "EMS-tidsgräns"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "EMS-reservreläkonfiguration",
+        "name": "EMS-reservfaser",
         "state": {
           "phase_1": "Fas 1",
           "phase_2": "Fas 2",

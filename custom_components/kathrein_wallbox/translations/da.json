@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Indstil relækonfiguration",
-      "description": "Vælg relækonfigurationen til EMS-styring.",
+      "name": "Indstil ladefaser",
+      "description": "Vælg, om ladeboksen under EMS-styring lader på én fase (fase 1) eller på tre faser.",
       "fields": {
         "device_id": {
           "name": "Ladeboks",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Indstil relækonfiguration efter EMS-timeout",
-      "description": "Vælg relækonfigurationen, der bruges, når EMS-timeout udløber.",
+      "name": "Indstil faser efter EMS-timeout",
+      "description": "Vælg de faser, der bruges, når EMS-timeout udløber.",
       "fields": {
         "device_id": {
           "name": "Ladeboks",
           "description": "Den ladeboks, der skal styres."
         },
         "value": {
-          "name": "Reservekonfiguration",
+          "name": "Reservefaser",
           "description": "Faser, der bruges efter timeout."
         }
       }
@@ -327,7 +327,7 @@
         "name": "EMS-timeoutperiode"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "EMS-reserverelækonfiguration",
+        "name": "EMS-reservefaser",
         "state": {
           "phase_1": "Fase 1",
           "phase_2": "Fase 2",

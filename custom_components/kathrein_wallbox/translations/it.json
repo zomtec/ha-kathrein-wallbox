@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Imposta la matrice dei relè",
-      "description": "Scegli la configurazione dei relè per il controllo EMS.",
+      "name": "Imposta le fasi di ricarica",
+      "description": "Scegli se la wallbox ricarica su una fase (fase 1) o su tre fasi con il controllo EMS.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Imposta la matrice dei relè di ripristino",
-      "description": "Scegli la configurazione dei relè da usare alla scadenza del timeout EMS.",
+      "name": "Imposta le fasi di ripristino",
+      "description": "Scegli le fasi da usare alla scadenza del timeout EMS.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
           "description": "Wallbox da controllare."
         },
         "value": {
-          "name": "Matrice di ripristino",
+          "name": "Fasi di ripristino",
           "description": "Fasi da usare dopo la scadenza del timeout."
         }
       }
@@ -327,7 +327,7 @@
         "name": "Timeout EMS"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "Matrice dei relè di ripristino EMS",
+        "name": "Fasi di ripristino EMS",
         "state": {
           "phase_1": "Fase 1",
           "phase_2": "Fase 2",

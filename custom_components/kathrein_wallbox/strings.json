@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Set relay matrix",
-      "description": "Choose the relay matrix for EMS control.",
+      "name": "Set charging phases",
+      "description": "Choose whether the wallbox charges on one phase (phase 1) or on three phases under EMS control.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
@@ -43,7 +43,7 @@
         },
         "value": {
           "name": "Phase selection",
-          "description": "Relay phases to enable."
+          "description": "Phases to use for charging."
         }
       }
     },
@@ -76,16 +76,16 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Set EMS timeout fallback relay matrix",
-      "description": "Choose the relay matrix used when the EMS timeout expires.",
+      "name": "Set EMS timeout fallback phases",
+      "description": "Choose the phases used when the EMS timeout expires.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
           "description": "Wallbox to control."
         },
         "value": {
-          "name": "Fallback relay matrix",
-          "description": "Relay phases to use after timeout."
+          "name": "Fallback phases",
+          "description": "Phases to use after timeout."
         }
       }
     },
@@ -327,7 +327,7 @@
         "name": "EMS timeout period"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "EMS timeout fallback relay matrix",
+        "name": "EMS timeout fallback phases",
         "state": {
           "phase_1": "Phase 1",
           "phase_2": "Phase 2",

@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Relaisconfiguratie instellen",
-      "description": "Kies de relaisconfiguratie voor de EMS-regeling.",
+      "name": "Laadfasen instellen",
+      "description": "Kies of de wallbox onder EMS-regeling op één fase (fase 1) of op drie fasen laadt.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Relaisconfiguratie na EMS-time-out instellen",
-      "description": "Kies de relaisconfiguratie die na het verlopen van de EMS-time-out wordt gebruikt.",
+      "name": "Fasen na EMS-time-out instellen",
+      "description": "Kies de fasen die na het verlopen van de EMS-time-out worden gebruikt.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
           "description": "De wallbox die je wilt bedienen."
         },
         "value": {
-          "name": "Terugvalconfiguratie",
+          "name": "Terugvalfasen",
           "description": "De fasen die na de time-out worden gebruikt."
         }
       }
@@ -327,7 +327,7 @@
         "name": "EMS-time-out"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "EMS-terugvalrelaisconfiguratie",
+        "name": "EMS-terugvalfasen",
         "state": {
           "phase_1": "Fase 1",
           "phase_2": "Fase 2",

@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Relaismatrix einstellen",
-      "description": "Phasen für die EMS Steuerung auswählen.",
+      "name": "Phasenvorgabe einstellen",
+      "description": "Festlegen, ob die Wallbox über die EMS Steuerung einphasig (Phase 1) oder dreiphasig lädt.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
