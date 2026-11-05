@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Nastavit konfiguraci relé",
-      "description": "Vyberte konfiguraci relé pro řízení EMS.",
+      "name": "Nastavit nabíjecí fáze",
+      "description": "Zvolte, zda nabíjecí stanice při řízení EMS nabíjí jednofázově (fáze 1), nebo třífázově.",
       "fields": {
         "device_id": {
           "name": "Nabíjecí stanice",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Nastavit konfiguraci relé po vypršení limitu EMS",
-      "description": "Vybere konfiguraci relé použitou po vypršení časového limitu EMS.",
+      "name": "Nastavit fáze po vypršení limitu EMS",
+      "description": "Vybere fáze použité po vypršení časového limitu EMS.",
       "fields": {
         "device_id": {
           "name": "Nabíjecí stanice",
           "description": "Nabíjecí stanice, kterou chcete ovládat."
         },
         "value": {
-          "name": "Záložní konfigurace",
+          "name": "Záložní fáze",
           "description": "Fáze použité po vypršení limitu."
         }
       }
@@ -327,7 +327,7 @@
         "name": "Časový limit EMS"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "Záložní konfigurace relé EMS",
+        "name": "Záložní fáze EMS",
         "state": {
           "phase_1": "Fáze 1",
           "phase_2": "Fáze 2",

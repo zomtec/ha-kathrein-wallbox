@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Configurar la matriz de relés",
-      "description": "Selecciona la matriz de relés para el control EMS.",
+      "name": "Configurar las fases de carga",
+      "description": "Elige si el wallbox carga en una fase (fase 1) o en tres fases bajo el control EMS.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Configurar la matriz de relés de respaldo",
-      "description": "Selecciona la matriz de relés que se utilizará cuando venza el tiempo del EMS.",
+      "name": "Configurar las fases de respaldo",
+      "description": "Selecciona las fases que se utilizarán cuando venza el tiempo del EMS.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
           "description": "Wallbox que se va a controlar."
         },
         "value": {
-          "name": "Matriz de respaldo",
+          "name": "Fases de respaldo",
           "description": "Fases que se utilizarán cuando venza el tiempo."
         }
       }
@@ -327,7 +327,7 @@
         "name": "Tiempo de espera EMS"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "Matriz de relés de respaldo EMS",
+        "name": "Fases de respaldo EMS",
         "state": {
           "phase_1": "Fase 1",
           "phase_2": "Fase 2",

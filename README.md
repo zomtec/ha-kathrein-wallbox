@@ -71,7 +71,7 @@ When a configured Wallbox gets a new IP address, discovery stores the new addres
 | Meter | Per-phase voltage, current, and active power; total active power and energy; grid frequency. Created only when a meter is detected. |
 | Charging | Charging state, session duration and energy, granted charging current and power; authorization tag and session ID of the current or last charging session. |
 | EVSE diagnostics | Proximity pilot (PP) and control pilot (CP) states; relay states; EVSE fault flags. |
-| EMS | Readbacks for the timeout period and the timeout fallback relay matrix and current. |
+| EMS | Readbacks for the timeout period and the timeout fallback phases and current. |
 | EMS controls | `Charging current` number input box (0 A to pause, or 6 to 32 A in 1 A steps) and `Phases` select (`Phase 1` or `3 Phases`). |
 | EMS diagnostics | `EMS control` binary sensor showing whether EMS control is active, whether turned on by Home Assistant or by another energy manager. |
 | Meter diagnostics | A binary sensor indicating whether a meter was detected. Once detected, it stays on. |

@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Angi reléoppsett",
-      "description": "Velg reléoppsett for EMS-styring.",
+      "name": "Angi ladefaser",
+      "description": "Velg om ladeboksen skal lade på én fase (fase 1) eller tre faser under EMS-styring.",
       "fields": {
         "device_id": {
           "name": "Ladeboks",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Angi reléoppsett etter EMS-tidsavbrudd",
-      "description": "Velg reléoppsettet som brukes når EMS-tidsavbruddet utløper.",
+      "name": "Angi faser etter EMS-tidsavbrudd",
+      "description": "Velg fasene som brukes når EMS-tidsavbruddet utløper.",
       "fields": {
         "device_id": {
           "name": "Ladeboks",
           "description": "Ladeboksen som skal styres."
         },
         "value": {
-          "name": "Reserveoppsett",
+          "name": "Reservefaser",
           "description": "Faser som brukes etter tidsavbruddet."
         }
       }
@@ -327,7 +327,7 @@
         "name": "EMS-tidsavbrudd"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "EMS-reservereléoppsett",
+        "name": "EMS-reservefaser",
         "state": {
           "phase_1": "Fase 1",
           "phase_2": "Fase 2",

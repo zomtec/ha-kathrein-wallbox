@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Definir configuração dos relés",
-      "description": "Selecione a configuração dos relés para o controlo EMS.",
+      "name": "Definir fases de carregamento",
+      "description": "Escolha se a wallbox carrega numa fase (fase 1) ou em três fases sob controlo EMS.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Definir configuração de relés após o tempo limite do EMS",
-      "description": "Selecione a configuração dos relés utilizada quando o tempo limite do EMS expira.",
+      "name": "Definir fases após o tempo limite do EMS",
+      "description": "Selecione as fases utilizadas quando o tempo limite do EMS expira.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
           "description": "Wallbox a controlar."
         },
         "value": {
-          "name": "Configuração de recurso",
+          "name": "Fases de recurso",
           "description": "Fases utilizadas após o tempo limite."
         }
       }
@@ -327,7 +327,7 @@
         "name": "Tempo limite do EMS"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "Configuração de recurso dos relés EMS",
+        "name": "Fases de recurso EMS",
         "state": {
           "phase_1": "Fase 1",
           "phase_2": "Fase 2",

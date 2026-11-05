@@ -34,8 +34,8 @@
       }
     },
     "set_relay_matrix": {
-      "name": "Ustaw konfigurację przekaźników",
-      "description": "Wybierz konfigurację przekaźników dla sterowania EMS.",
+      "name": "Ustaw fazy ładowania",
+      "description": "Wybierz, czy wallbox ma ładować jednofazowo (faza 1) czy trójfazowo przy sterowaniu EMS.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
@@ -76,15 +76,15 @@
       }
     },
     "set_timeout_fallback_relay_matrix": {
-      "name": "Ustaw konfigurację przekaźników po limicie EMS",
-      "description": "Wybierz konfigurację przekaźników używaną po upływie limitu EMS.",
+      "name": "Ustaw fazy po limicie EMS",
+      "description": "Wybierz fazy używane po upływie limitu EMS.",
       "fields": {
         "device_id": {
           "name": "Wallbox",
           "description": "Wallbox, którym chcesz sterować."
         },
         "value": {
-          "name": "Zapasowa konfiguracja przekaźników",
+          "name": "Zapasowe fazy",
           "description": "Fazy używane po upływie limitu."
         }
       }
@@ -327,7 +327,7 @@
         "name": "Limit czasu EMS"
       },
       "timeout_fallback_relay_matrix": {
-        "name": "Zapasowa konfiguracja przekaźników EMS",
+        "name": "Zapasowe fazy EMS",
         "state": {
           "phase_1": "Faza 1",
           "phase_2": "Faza 2",
