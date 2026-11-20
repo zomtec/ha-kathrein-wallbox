@@ -117,6 +117,16 @@ async def test_entity_identifies_device_by_serial(
     assert device.serial_number == serial
 
 
+async def test_device_info_names_full_manufacturer(
+    hass, setup_integration, entity_id_of
+) -> None:
+    """Report the manufacturer's full legal company name."""
+    await setup_integration()
+
+    device = _charging_state_device(hass, entity_id_of)
+    assert device.manufacturer == "KATHREIN Digital Systems GmbH"
+
+
 async def test_device_info_links_device_number_and_web_interface(
     hass, entry, mock_modbus_unit, setup_integration, entity_id_of
 ) -> None:
