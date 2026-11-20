@@ -6,7 +6,7 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_SCAN_INTERVAL, Platform
 
 DOMAIN = "kathrein_wallbox"
-MANUFACTURER = "Kathrein"
+MANUFACTURER = "KATHREIN Digital Systems GmbH"
 DEVICE_NAME = "Kathrein Wallbox"
 DEFAULT_PORT = 502
 # The device ignores the unit ID; the manual recommends 0 (broadcast).
